@@ -8,14 +8,14 @@
 				<fieldset class="fieldsets">
 					<legend>OJT Login</legend>
 					<div id="logged-in">
-						<span id='ojt'>Wilson</span>
-						<input type="button" value="Logout"/>
+						<p class="center-text"><strong>Current OJT:</strong> <span id='ojt-name'>Wilson</span>
+						<input type="button" value="Logout" id="logout-btn"/></p>
 					</div>
 					<div id="logged-out">
 						<table>
-						<tr><th class="right-text">Name:</th><td><input type="text"></td></tr>	
-						<tr><th class="right-text">Password:</th><td><input type="password"></td></tr>
-						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login"/></td></tr>
+						<tr><th class="right-text">UserID:</th><td><input type="text" id="ojt-id"></td></tr>	
+						<tr><th class="right-text">Password:</th><td><input type="password" id="ojt-pass"></td></tr>
+						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login" id="ojt-login-btn"/></td></tr>
 						</table>
 					</div>
 				</fieldset>
@@ -25,10 +25,10 @@
 				<fieldset class="fieldsets">
 					<legend>Visitor Login</legend>
 					<table>
-						<tr><th class="right-text">ID Number:</th><td><input type="text"></td></tr>	
-						<tr><th class="right-text">Subject:</th><td><input type="text"></td></tr>
-						<tr><th class="right-text">Adviser:</th><td><input type="text"></td></tr>
-						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login"/></td></tr>
+						<tr><th class="right-text">ID Number:</th><td><input type="text" id="visitor-id"></td></tr>	
+						<tr><th class="right-text">Subject:</th><td><input type="text" id="visitor-sub"></td></tr>
+						<tr><th class="right-text">Adviser:</th><td><input type="text" id="visitor-adviser"></td></tr>
+						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login" id="visitor-login-btn"/></td></tr>
 						</table>
 				</fieldset>
 			</div>
@@ -38,9 +38,9 @@
 			<div id="print">
 				<fieldset class="fieldsets">
 					<legend>Print Log</legend>
-					Pages: <input type="number" min="0"><br>
-					<p id="total"> Total: PHP <span>0.00</span></p> 
-					<input type="button" value="Add Record"/>
+					<p class='center-text'><strong>Pages:</strong> <input type="number" min="0" id="pages"/ value="0">&nbsp;<input type="button" value="Add Record" id="print-btn"/></p>
+					<p class='center-text'><strong>Total:</strong> PHP <span id="total">0.00</span></p> 
+					
 				</fieldset>
 			</div>
 			
@@ -53,7 +53,7 @@
 						<tr><td>Gadi Germon Lorenz Lusica Galindo</td><td class="center-text">12:00 AM</td><td class="center-text">Logout</td></tr>
 					</table>
 					<hr>
-					<p class = "center-text">Search: <input type="text" id="sort" /></p>
+					<p class = "center-text">Search: <input type="text" id="search" /></p>
 				</fieldset>
 			</div>
 		</div>
@@ -61,5 +61,5 @@
 	</div>
 	
 	
-	<div id="footer" class="clear"><br /><hr/><p class="center-text">Copyright &copy 2013 | Gervel Giva | Hiten Vasnani</p></div>
+	<div id="footer" class="clear"><br /><hr/><p class="center-text">Copyright &copy 2013 | Gervel Giva | Hiten Vasnani | Wilson Sasam</p></div>
 </div>

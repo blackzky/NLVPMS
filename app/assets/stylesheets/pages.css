@@ -1,0 +1,23 @@
+body, html{
+	margin:0;
+	padding:0;
+}
+
+#container{
+	width:1024px;
+	margin: 0 auto;
+}
+
+#header{
+	width:100%;
+	height:215px;
+	background-image:url('banner.JPG');
+}
+
+#content{
+	width: 100%;
+}
+
+#logged-in{
+	display: none;
+}

@@ -6,6 +6,10 @@ body, html{
 #container{
 	width:1024px;
 	margin: 0 auto;
+	border: 1px solid #555;
+	display: block;
+	box-shadow: 0 0 8px rgba(0, 0 , 0, 0.7);
+	background-image:url('');
 }
 
 #header{
@@ -20,4 +24,42 @@ body, html{
 
 #logged-in{
 	display: none;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.half{
+	width: 50%;
+}
+
+.fieldsets{
+	margin: 1em;
+}
+.clear{
+	clear:both;
+}
+.center-text{
+	text-align:center;
+}
+
+.right-text{
+	text-align:right;
+}
+
+#logged-in, #logged-out{
+	width: 235px;
+	margin: 0 auto;
+}
+
+#visitor-login table{
+	width: 248px;
+	margin: 0 auto;
+}
+
+#visitors-list{
+	width: 100%;
 }

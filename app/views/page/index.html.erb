@@ -3,45 +3,63 @@
 	
 	<div id="content">
 	
-		<div id="ojt-login">
-			<fieldset>
-				<legend>OJT</legend>
-				<div id="logged-in">
-					<span id='ojt'>Wilson</span>
-					<input type="button" value="Logout"/>
-				</div>
-				<div id="logged-out">
-					Name: <input type="text"><br>
-					Password: <input type="text"><br>
-					<input type="button" value="Login"/>
-				</div>
-			</fieldset>
+		<div class="left half">
+			<div id="ojt-login">
+				<fieldset class="fieldsets">
+					<legend>OJT Login</legend>
+					<div id="logged-in">
+						<span id='ojt'>Wilson</span>
+						<input type="button" value="Logout"/>
+					</div>
+					<div id="logged-out">
+						<table>
+						<tr><th class="right-text">Name:</th><td><input type="text"></td></tr>	
+						<tr><th class="right-text">Password:</th><td><input type="password"></td></tr>
+						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login"/></td></tr>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+		
+			<div id="visitor-login">
+				<fieldset class="fieldsets">
+					<legend>Visitor Login</legend>
+					<table>
+						<tr><th class="right-text">ID Number:</th><td><input type="text"></td></tr>	
+						<tr><th class="right-text">Subject:</th><td><input type="text"></td></tr>
+						<tr><th class="right-text">Adviser:</th><td><input type="text"></td></tr>
+						<tr><td colspan ="2" class = "center-text"><input type="button" value="Login"/></td></tr>
+						</table>
+				</fieldset>
+			</div>
 		</div>
 		
-		<div id="visitor-login">
-			<fieldset>
-				<legend>Visitor Login</legend>
-				ID Num: <input type="text"><br>
-				Subject:<input type="text"><br>
-				Adviser:<input type="text"><br>
-				<input type="button" value="Login"/>
-			</fieldset>
+		<div class="right half">
+			<div id="print">
+				<fieldset class="fieldsets">
+					<legend>Print Log</legend>
+					Pages: <input type="number" min="0"><br>
+					<p id="total"> Total: PHP <span>0.00</span></p> 
+					<input type="button" value="Add Record"/>
+				</fieldset>
+			</div>
+			
+			<div id="visitors">
+				<fieldset class="fieldsets">
+					<legend>Visitors</legend>
+					<table id="visitors-list">
+						<tr><th>Name</th><th>Time-in</th><th>Option</th></tr>
+						<tr><td>Rexford Louie Jake T. To Chip</td><td class="center-text">12:00 AM</td><td class="center-text"><a href="#">Logout</a></td></tr>
+						<tr><td>Gadi Germon Lorenz Lusica Galindo</td><td class="center-text">12:00 AM</td><td class="center-text">Logout</td></tr>
+					</table>
+					<hr>
+					<p class = "center-text">Search: <input type="text" id="sort" /></p>
+				</fieldset>
+			</div>
 		</div>
 		
-		<div id="print">
-			<fieldset>
-				<legend>Print Log</legend>
-				Pages: <input type="number"><br>
-				<p id="total"> Total: PHP 0.00</p> 
-				<input type="button" value="Add Record"/>
-			</fieldset>
-		</div>
-		
-		<div id="visitors">
-		
-		</div>
-	
-	
 	</div>
 	
+	
+	<div id="footer" class="clear"><br /><hr/><p class="center-text">Copyright &copy 2013 | Gervel Giva | Hiten Vasnani</p></div>
 </div>
